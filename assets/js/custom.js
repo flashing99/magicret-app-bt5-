@@ -88,6 +88,7 @@
 
   function dynamicCurrentMenuClass(selector) {
     let FileName = window.location.href.split("/").reverse()[0];
+    console.log('mohamed', window.location.href.split("/"))
 
     selector.find("li").each(function () {
       let anchor = $(this).find("a");
@@ -110,7 +111,7 @@
   }
 
 
-
+/* 
   if ($(".main-menu__list").length) {
     // dynamic current class
     let mainNavUL = $(".main-menu__list");
@@ -122,7 +123,7 @@
     // dynamic current class
     let mainNavUL = $(".service-details__sidebar-service-list");
     dynamicCurrentMenuClass(mainNavUL);
-  }
+  } */
 
 
   if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
@@ -527,7 +528,7 @@
   SmoothMenuScroll();
 
 
-  function OnePageMenuScroll() {
+ /*  function OnePageMenuScroll() {
     var windscroll = $(window).scrollTop();
     if (windscroll >= 117) {
       var menuAnchor = $(".one-page-scroll-menu .scrollToLink").children("a");
@@ -551,7 +552,7 @@
       $(".one-page-scroll-menu li.current").removeClass("current");
       $(".one-page-scroll-menu li:first").addClass("current");
     }
-  }
+  } */
 
 
 
@@ -615,7 +616,7 @@
       }
     }
 
-    OnePageMenuScroll();
+    //OnePageMenuScroll();
 
   });
 
