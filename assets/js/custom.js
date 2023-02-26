@@ -65,7 +65,7 @@
 
 
   // Color switcher
-  function swithcerMenu() {
+  /* function swithcerMenu() {
     if ($('.switch_menu').length) {
 
       $('.switch_btn button').on('click', function () {
@@ -82,7 +82,7 @@
       });
 
     };
-  }
+  } */
 
 
 
@@ -564,7 +564,7 @@
 
     thmSwiperInit();
     thmOwlInit();
-    swithcerMenu();
+    // swithcerMenu();
     handlePreloader();
 
 
